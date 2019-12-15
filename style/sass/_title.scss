@@ -1,0 +1,25 @@
+.title {
+    margin: 20px auto;
+    width: 0;
+    position: relative;
+    .titleCenter {
+        @include flexerV;
+        .dottedLine {
+            width: 1.1px;
+        }
+        .maintitle {
+            @include titleText;
+            min-width: 400px;
+        }
+    }
+    .subtitle {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        @include titleText;
+        font-size: 2.2rem;
+        font-weight: 400;
+        min-width: 200px;
+        text-align: left;
+    }
+}

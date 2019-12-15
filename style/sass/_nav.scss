@@ -1,0 +1,40 @@
+nav {
+    z-index: 100;
+    position: fixed;
+    right: 4.5%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: $littlegrey;
+    width: 3rem;
+    .navText {
+        margin-bottom: 2rem;
+        transform: rotate(-90deg);
+        font-family: 'Comfortaa', cursive;
+        font-weight: 300;
+        font-size: 1.2rem;  
+        letter-spacing: 0.6rem;
+        text-transform: uppercase;
+        color: rgb(176, 176, 176);
+    }   
+    .navDot {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px 3px;
+        border-radius: 50px;
+        @include flexerV;
+        li {
+            padding: 1.1rem;
+            i {
+                font-size: 0.6rem;
+            }
+        } 
+        .selected {
+            padding: 0.4rem;
+            color: white;
+            i {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

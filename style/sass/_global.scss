@@ -1,14 +1,8 @@
 $violet: #4a154b;
 $darkblue: #423a8b;
 $mint: #b9edcc;
+$lightmint: #d8f2e2;
 $littlegrey: #e1e1e1;
-
-
-
-
-    // font-family: 'Comfortaa', cursive;
-    // font-family: 'Open Sans', sans-serif;
-
 
 
 * {
@@ -53,9 +47,35 @@ img {
     margin: 0 auto;
 }
 
+// orbit keyframe
+// orbit keyframes
+// @mixin orbit($postionX, $positionY) {
+//     from { 	transform: rotate(0deg) translate($postionX, $positionY) rotate(0deg); }
+//     to   {  transform: rotate(360deg) translate($postionX, $positionY) rotate(-360deg); }
+// }
+
+
+// @-webkit-keyframes orbit {
+// 	from { 	-webkit-transform: rotate(0deg) translateX(100%) rotate(0deg); }
+// 	to   {  -webkit-transform: rotate(360deg) translateX(100%) rotate(-360deg); }
+// }
+
+// @-moz-keyframes orbit {
+// 	from { 	-moz-transform: rotate(0deg) translateX(100%) rotate(0deg); }
+// 	to   {  -moz-transform: rotate(360deg) translateX(100%) rotate(-360deg); }
+// }
+
+// @-o-keyframes orbit {
+// 	from { 	-o-transform: rotate(0deg) translateX(100%) rotate(0deg); }
+// 	to   {  -o-transform: rotate(360deg) translateX(100%) rotate(-360deg); }
+// }
+
+// @keyframes orbit {
+// 	from { 	transform: rotate(0deg) translateX(-100%) rotate(0deg); }
+// 	to   {  transform: rotate(360deg) translateX(-100%) rotate(-360deg); }
+// }
+
 // title style
-
-
 
 @mixin heading1 {
     font-family: 'Montserrat', sans-serif;
@@ -83,8 +103,8 @@ img {
 
 @mixin titleText {
     font-family: 'Open Sans', sans-serif;
-    font-size: 5rem;
-    line-height: 6rem;
+    font-size: 7rem;
+    line-height: 8rem;
     font-weight: 700;
     color: $darkblue;
     text-align: center;

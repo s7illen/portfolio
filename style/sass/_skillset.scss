@@ -1,0 +1,207 @@
+.skillset {
+    height: 1080px;
+    background-image: url("../../image/skillsetBackground.png");
+    background-size: cover;
+    background-position: left;
+}
+
+.mark {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 700px;
+    height: 700px;
+    grid-template-columns: repeat(6, calc(100% / 6));
+    grid-template-rows: repeat(6, calc(100% / 6)); 
+    .outerCircle {
+        grid-area: 1 / 1 / 7 / 7; 
+        background-color: $lightmint;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .innerCircle {
+        grid-area: 2 / 2 / 6 / 6; 
+        background-color: white;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    .target {
+        grid-area: 3 / 3 / 5 / 5; 
+        background-color: $lightmint;
+        border-radius: 50%;
+        z-index: 3;
+    }
+    .js {
+        grid-area: 3 / 3 / 5 / 5; 
+        @include flexerH;
+        img {
+            animation: orbitJs 30s linear infinite;
+            z-index: 999;
+            width: 150px;
+            @keyframes orbitJs {
+                from { 	transform: rotate(0deg) translate(-50%, -50%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg); }
+            }
+        }
+    }
+    .react {
+        grid-area: 3 / 3 / 5 / 5; 
+        @include flexerH;
+        img {
+            animation: orbitReact 30s linear infinite;
+            z-index: 999;
+            width: 150px;
+            @keyframes orbitReact {
+                from { 	transform: rotate(0deg) translate(50%, 50%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(50%, 50%) rotate(-360deg); }
+            }
+        }
+    }
+    .sass {
+        grid-area: 2 / 2 / 6 / 6; 
+        @include flexerH;
+        img {
+            animation: orbitSass 60s linear infinite;
+            z-index: 999;
+            width: 125px;
+            @keyframes orbitSass {
+                from { 	transform: rotate(0deg) translate(-120%, -145%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(-120%, -145%) rotate(-360deg); }
+            }
+        }
+    }
+    .jQuery {
+        grid-area: 2 / 2 / 6 / 6; 
+        @include flexerH;
+        img {
+            animation: orbitjQuery 60s linear infinite;
+            z-index: 999;
+            width: 125px;
+            @keyframes orbitjQuery {
+                from { 	transform: rotate(0deg) translate(0, 188%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(0, 188%) rotate(-360deg); }
+            }
+        }
+    }
+    .github {
+        grid-area: 2 / 2 / 6 / 6; 
+        @include flexerH;
+        img {
+            animation: orbitGithub 60s linear infinite;
+            z-index: 999;
+            width: 125px;
+            @keyframes orbitGithub {
+                from { 	transform: rotate(0deg) translate(175%, 60%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(175%, 60%) rotate(-360deg); }
+            }
+        }
+    }
+    .html {
+        grid-area: 2 / 2 / 6 / 6; 
+        @include flexerH;
+        img {
+            animation: orbitHtml 60s linear infinite;
+            z-index: 999;
+            width: 125px;
+            @keyframes orbitHtml {
+                from { 	transform: rotate(0deg) translate(120%, -145%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(120%, -145%) rotate(-360deg); }
+            }
+        }
+    }
+    .css {
+        grid-area: 2 / 2 / 6 / 6; 
+        @include flexerH;
+        img {
+            animation: orbitCss 60s linear infinite;
+            z-index: 999;
+            width: 125px;
+            @keyframes orbitCss {
+                from { 	transform: rotate(0deg) translate(-175%, 60%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(-175%, 60%) rotate(-360deg); }
+            }
+        }
+    }
+    .rwd {
+        grid-area: 1 / 1 / 7 / 7;
+        @include flexerH;
+        img {
+            animation: orbitRwd 90s linear infinite;
+            z-index: 998;
+            width: 100px;
+            @keyframes orbitRwd {
+                from { 	transform: rotate(0deg) translate(0, 350%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(0, 350%) rotate(-360deg); }
+            }
+        }
+    }
+    .ps {
+        grid-area: 1 / 1 / 7 / 7;
+        @include flexerH;
+        img {
+            animation: orbitPs 90s linear infinite;
+            z-index: 998;
+            width: 100px;
+            @keyframes orbitPs {
+                from { 	transform: rotate(0deg) translate(0, -350%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(0, -350%) rotate(-360deg); }
+            }
+        }
+    }
+    .ai {
+        grid-area: 1 / 1 / 7 / 7;
+        @include flexerH;
+        img {
+            animation: orbitAi 90s linear infinite;
+            z-index: 999;
+            width: 100px;
+            @keyframes orbitAi {
+                from { 	transform: rotate(0deg) translate(305.2%, -175%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(305.2%, -175%) rotate(-360deg); }
+            }
+        }
+    }
+    .indesign {
+        grid-area: 1 / 1 / 7 / 7;
+        @include flexerH;
+        img {
+            animation: orbitId 90s linear infinite;
+            z-index: 998;
+            width: 100px;
+            @keyframes orbitId {
+                from { 	transform: rotate(0deg) translate(305.2%, 175%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(305.2%, 175%) rotate(-360deg); }
+            }
+        }
+    }
+    .premiere {
+        grid-area: 1 / 1 / 7 / 7; 
+        @include flexerH;
+        img {
+            animation: orbitPremiere 90s linear infinite;
+            z-index: 998;
+            width: 100px;
+            @keyframes orbitPremiere {
+                from { 	transform: rotate(0deg) translate(-305.2%, -175%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(-305.2%, -175%) rotate(-360deg); }
+            }
+        }
+    }
+    .firebase {
+        grid-area: 1 / 1 / 7 / 7; 
+        @include flexerH;
+        img {
+            animation: orbitFirebase 90s linear infinite;
+            z-index: 998;
+            width: 100px;
+            @keyframes orbitFirebase {
+                from { 	transform: rotate(0deg) translate(-305.2%, 175%) rotate(0deg); }
+                to   {  transform: rotate(360deg) translate(-305.2%, 175%) rotate(-360deg); }
+            }
+        }
+    }
+}
+
+img:hover {
+    animation: none;
+}

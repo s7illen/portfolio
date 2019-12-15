@@ -210,7 +210,7 @@ img {
 nav {
   z-index: 100;
   position: fixed;
-  right: 4.5%;
+  right: 2%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -347,7 +347,7 @@ header {
 .mouse {
   width: 20px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: calc(50% - 10px);
 }
 
@@ -379,8 +379,8 @@ header {
 
 .title .titleCenter .maintitle {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
-  line-height: 6rem;
+  font-size: 7rem;
+  line-height: 8rem;
   font-weight: 700;
   color: #423a8b;
   text-align: center;
@@ -391,19 +391,675 @@ header {
 
 .title .subtitle {
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 13px;
+  left: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
-  line-height: 6rem;
+  font-size: 7rem;
+  line-height: 8rem;
   font-weight: 700;
   color: #423a8b;
   text-align: center;
   text-transform: uppercase;
   overflow: hidden;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 400;
   min-width: 200px;
   text-align: left;
+}
+
+.skillset {
+  height: 1080px;
+  background-image: url("../../image/skillsetBackground.png");
+  background-size: cover;
+  background-position: left;
+}
+
+.mark {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  margin-top: 110px;
+  width: 700px;
+  height: 700px;
+  -ms-grid-columns: (calc(100% / 6))[6];
+      grid-template-columns: repeat(6, calc(100% / 6));
+  -ms-grid-rows: (calc(100% / 6))[6];
+      grid-template-rows: repeat(6, calc(100% / 6));
+}
+
+.mark .outerCircle {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  background-color: #d8f2e2;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.mark .innerCircle {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.mark .target {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 3 / 5 / 5;
+  background-color: #d8f2e2;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.mark .js {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 3 / 5 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .js img {
+  -webkit-animation: orbitJs 30s linear infinite;
+          animation: orbitJs 30s linear infinite;
+  z-index: 999;
+  width: 150px;
+}
+
+@-webkit-keyframes orbitJs {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+            transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg);
+            transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitJs {
+  from {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+            transform: rotate(0deg) translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg);
+            transform: rotate(360deg) translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+.mark .react {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 3 / 5 / 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .react img {
+  -webkit-animation: orbitReact 30s linear infinite;
+          animation: orbitReact 30s linear infinite;
+  z-index: 999;
+  width: 150px;
+}
+
+@-webkit-keyframes orbitReact {
+  from {
+    -webkit-transform: rotate(0deg) translate(50%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(50%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(50%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(50%, 50%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitReact {
+  from {
+    -webkit-transform: rotate(0deg) translate(50%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(50%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(50%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(50%, 50%) rotate(-360deg);
+  }
+}
+
+.mark .sass {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .sass img {
+  -webkit-animation: orbitSass 60s linear infinite;
+          animation: orbitSass 60s linear infinite;
+  z-index: 999;
+  width: 125px;
+}
+
+@-webkit-keyframes orbitSass {
+  from {
+    -webkit-transform: rotate(0deg) translate(-120%, -145%) rotate(0deg);
+            transform: rotate(0deg) translate(-120%, -145%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-120%, -145%) rotate(-360deg);
+            transform: rotate(360deg) translate(-120%, -145%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitSass {
+  from {
+    -webkit-transform: rotate(0deg) translate(-120%, -145%) rotate(0deg);
+            transform: rotate(0deg) translate(-120%, -145%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-120%, -145%) rotate(-360deg);
+            transform: rotate(360deg) translate(-120%, -145%) rotate(-360deg);
+  }
+}
+
+.mark .jQuery {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .jQuery img {
+  -webkit-animation: orbitjQuery 60s linear infinite;
+          animation: orbitjQuery 60s linear infinite;
+  z-index: 999;
+  width: 125px;
+}
+
+@-webkit-keyframes orbitjQuery {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, 188%) rotate(0deg);
+            transform: rotate(0deg) translate(0, 188%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, 188%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, 188%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitjQuery {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, 188%) rotate(0deg);
+            transform: rotate(0deg) translate(0, 188%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, 188%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, 188%) rotate(-360deg);
+  }
+}
+
+.mark .github {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .github img {
+  -webkit-animation: orbitGithub 60s linear infinite;
+          animation: orbitGithub 60s linear infinite;
+  z-index: 999;
+  width: 125px;
+}
+
+@-webkit-keyframes orbitGithub {
+  from {
+    -webkit-transform: rotate(0deg) translate(175%, 60%) rotate(0deg);
+            transform: rotate(0deg) translate(175%, 60%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(175%, 60%) rotate(-360deg);
+            transform: rotate(360deg) translate(175%, 60%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitGithub {
+  from {
+    -webkit-transform: rotate(0deg) translate(175%, 60%) rotate(0deg);
+            transform: rotate(0deg) translate(175%, 60%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(175%, 60%) rotate(-360deg);
+            transform: rotate(360deg) translate(175%, 60%) rotate(-360deg);
+  }
+}
+
+.mark .html {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .html img {
+  -webkit-animation: orbitHtml 60s linear infinite;
+          animation: orbitHtml 60s linear infinite;
+  z-index: 999;
+  width: 125px;
+}
+
+@-webkit-keyframes orbitHtml {
+  from {
+    -webkit-transform: rotate(0deg) translate(120%, -145%) rotate(0deg);
+            transform: rotate(0deg) translate(120%, -145%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(120%, -145%) rotate(-360deg);
+            transform: rotate(360deg) translate(120%, -145%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitHtml {
+  from {
+    -webkit-transform: rotate(0deg) translate(120%, -145%) rotate(0deg);
+            transform: rotate(0deg) translate(120%, -145%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(120%, -145%) rotate(-360deg);
+            transform: rotate(360deg) translate(120%, -145%) rotate(-360deg);
+  }
+}
+
+.mark .css {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 2 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .css img {
+  -webkit-animation: orbitCss 60s linear infinite;
+          animation: orbitCss 60s linear infinite;
+  z-index: 999;
+  width: 125px;
+}
+
+@-webkit-keyframes orbitCss {
+  from {
+    -webkit-transform: rotate(0deg) translate(-175%, 60%) rotate(0deg);
+            transform: rotate(0deg) translate(-175%, 60%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-175%, 60%) rotate(-360deg);
+            transform: rotate(360deg) translate(-175%, 60%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitCss {
+  from {
+    -webkit-transform: rotate(0deg) translate(-175%, 60%) rotate(0deg);
+            transform: rotate(0deg) translate(-175%, 60%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-175%, 60%) rotate(-360deg);
+            transform: rotate(360deg) translate(-175%, 60%) rotate(-360deg);
+  }
+}
+
+.mark .rwd {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .rwd img {
+  -webkit-animation: orbitRwd 90s linear infinite;
+          animation: orbitRwd 90s linear infinite;
+  z-index: 998;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitRwd {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, 350%) rotate(0deg);
+            transform: rotate(0deg) translate(0, 350%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, 350%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, 350%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitRwd {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, 350%) rotate(0deg);
+            transform: rotate(0deg) translate(0, 350%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, 350%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, 350%) rotate(-360deg);
+  }
+}
+
+.mark .ps {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .ps img {
+  -webkit-animation: orbitPs 90s linear infinite;
+          animation: orbitPs 90s linear infinite;
+  z-index: 998;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitPs {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, -350%) rotate(0deg);
+            transform: rotate(0deg) translate(0, -350%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, -350%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, -350%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitPs {
+  from {
+    -webkit-transform: rotate(0deg) translate(0, -350%) rotate(0deg);
+            transform: rotate(0deg) translate(0, -350%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(0, -350%) rotate(-360deg);
+            transform: rotate(360deg) translate(0, -350%) rotate(-360deg);
+  }
+}
+
+.mark .ai {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .ai img {
+  -webkit-animation: orbitAi 90s linear infinite;
+          animation: orbitAi 90s linear infinite;
+  z-index: 999;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitAi {
+  from {
+    -webkit-transform: rotate(0deg) translate(305.2%, -175%) rotate(0deg);
+            transform: rotate(0deg) translate(305.2%, -175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(305.2%, -175%) rotate(-360deg);
+            transform: rotate(360deg) translate(305.2%, -175%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitAi {
+  from {
+    -webkit-transform: rotate(0deg) translate(305.2%, -175%) rotate(0deg);
+            transform: rotate(0deg) translate(305.2%, -175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(305.2%, -175%) rotate(-360deg);
+            transform: rotate(360deg) translate(305.2%, -175%) rotate(-360deg);
+  }
+}
+
+.mark .indesign {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .indesign img {
+  -webkit-animation: orbitId 90s linear infinite;
+          animation: orbitId 90s linear infinite;
+  z-index: 998;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitId {
+  from {
+    -webkit-transform: rotate(0deg) translate(305.2%, 175%) rotate(0deg);
+            transform: rotate(0deg) translate(305.2%, 175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(305.2%, 175%) rotate(-360deg);
+            transform: rotate(360deg) translate(305.2%, 175%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitId {
+  from {
+    -webkit-transform: rotate(0deg) translate(305.2%, 175%) rotate(0deg);
+            transform: rotate(0deg) translate(305.2%, 175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(305.2%, 175%) rotate(-360deg);
+            transform: rotate(360deg) translate(305.2%, 175%) rotate(-360deg);
+  }
+}
+
+.mark .premiere {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .premiere img {
+  -webkit-animation: orbitPremiere 90s linear infinite;
+          animation: orbitPremiere 90s linear infinite;
+  z-index: 998;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitPremiere {
+  from {
+    -webkit-transform: rotate(0deg) translate(-305.2%, -175%) rotate(0deg);
+            transform: rotate(0deg) translate(-305.2%, -175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-305.2%, -175%) rotate(-360deg);
+            transform: rotate(360deg) translate(-305.2%, -175%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitPremiere {
+  from {
+    -webkit-transform: rotate(0deg) translate(-305.2%, -175%) rotate(0deg);
+            transform: rotate(0deg) translate(-305.2%, -175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-305.2%, -175%) rotate(-360deg);
+            transform: rotate(360deg) translate(-305.2%, -175%) rotate(-360deg);
+  }
+}
+
+.mark .firebase {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / 7 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mark .firebase img {
+  -webkit-animation: orbitFirebase 90s linear infinite;
+          animation: orbitFirebase 90s linear infinite;
+  z-index: 998;
+  width: 100px;
+}
+
+@-webkit-keyframes orbitFirebase {
+  from {
+    -webkit-transform: rotate(0deg) translate(-305.2%, 175%) rotate(0deg);
+            transform: rotate(0deg) translate(-305.2%, 175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-305.2%, 175%) rotate(-360deg);
+            transform: rotate(360deg) translate(-305.2%, 175%) rotate(-360deg);
+  }
+}
+
+@keyframes orbitFirebase {
+  from {
+    -webkit-transform: rotate(0deg) translate(-305.2%, 175%) rotate(0deg);
+            transform: rotate(0deg) translate(-305.2%, 175%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-305.2%, 175%) rotate(-360deg);
+            transform: rotate(360deg) translate(-305.2%, 175%) rotate(-360deg);
+  }
+}
+
+img:hover {
+  -webkit-animation: none;
+          animation: none;
 }
 /*# sourceMappingURL=style.css.map */

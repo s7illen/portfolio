@@ -13,13 +13,13 @@ nav {
         font-family: 'Comfortaa', cursive;
         font-weight: 300;
         font-size: 1.2rem;  
-        letter-spacing: 0.6rem;
+        letter-spacing: 0.5rem;
         text-transform: uppercase;
         color: rgb(176, 176, 176);
     }   
     .navDot {
         background: rgba(0, 0, 0, 0.3);
-        padding: 10px 3px;
+        padding: 3px 3px;
         border-radius: 50px;
         @include flexerV;
         li {

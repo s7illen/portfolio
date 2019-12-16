@@ -119,6 +119,20 @@ img {
     color: white;
 }
 
+@mixin heading4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin heading5 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $violet;
+}
+
 @mixin text {
     font-family: 'Comfortaa', cursive;
     font-size: 1.6rem;

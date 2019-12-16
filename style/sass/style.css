@@ -411,7 +411,7 @@ header {
   height: 1080px;
   background-image: url("../../image/skillsetBackground.png");
   background-size: cover;
-  background-position: left;
+  background-position: bottom left;
 }
 
 .mark {

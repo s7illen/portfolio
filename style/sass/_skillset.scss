@@ -208,7 +208,7 @@
 
     .skillset {
     height: auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     }
@@ -242,4 +242,10 @@
         }
     }
  
+}
+
+@media (max-width: 700px) {
+    .skillset {
+    background-size: contain;
+    }
 }

@@ -390,6 +390,7 @@ header {
   font-size: 2rem;
   position: relative;
   top: -6rem;
+  line-height: 3rem;
 }
 
 .headerContainer .bio {
@@ -1267,7 +1268,7 @@ header {
 @media (max-width: 800px) {
   .skillset {
     height: auto;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
   }
@@ -1303,6 +1304,12 @@ header {
             animation: 0;
     width: 100px;
     margin: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .skillset {
+    background-size: contain;
   }
 }
 

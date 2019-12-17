@@ -13,7 +13,7 @@
         align-items: flex-end;
         grid-area: 1 / 1 / 2 / 2;
         margin-right: 5rem;
-        h4 {
+        span {
             @include heading4;
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -69,10 +69,11 @@
 
 .juno {
     .resumeTitle {
-        h4 {
+        span {
             background: -webkit-linear-gradient(0deg, rgb(255, 127, 202) ,rgb(255, 198, 85));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
     }
     .duration {
@@ -84,10 +85,11 @@
 
 .nexus {
     .resumeTitle {
-        h4 {
+        span {
             background: -webkit-linear-gradient(0deg, rgb(161, 220, 182) 10%,rgb(250, 248, 112));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
     }
     .duration {
@@ -102,10 +104,11 @@
 
 .huChen {
     .resumeTitle {
-        h4 {
+        span {
             background: -webkit-linear-gradient(0deg, rgb(180, 130, 246),rgb(122, 219, 249));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
     }
     .duration {
@@ -117,10 +120,11 @@
 
 .provalue {
     .resumeTitle {
-        h4 {
+        span {
             background: -webkit-linear-gradient(0deg, rgb(255, 164, 67),rgb(227, 252, 136));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
     }
     .duration {
@@ -135,10 +139,11 @@
 
 .seneca {
     .resumeTitle {
-        h4 {
+        span {
             background: -webkit-linear-gradient(0deg, rgb(232, 167, 180),rgb(118, 205, 245));
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
         }
     }
     .duration {
@@ -172,7 +177,7 @@
             grid-area: 1 / 2 / 2 / 3; 
             margin: 0;
             padding: 30px 0 0 15px;
-            h4 {
+            span {
                 @include heading4;
                 font-size: 3rem;
                 margin-bottom: 1rem;
@@ -212,7 +217,7 @@
 @media (max-width: 600px) {
     .resumeContainer {
         .resumeTitle {
-            h4 {
+            span {
                 font-size: 2rem;
             }
         }

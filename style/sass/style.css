@@ -314,6 +314,7 @@ header {
 @media (max-width: 600px) {
   .headerContainer .myTitle {
     font-size: 6rem;
+    line-height: 10rem;
   }
 }
 
@@ -477,47 +478,12 @@ header {
   header {
     background-position: bottom right;
   }
+  .headerContainer .logo {
+    width: 150px;
+  }
   .headerContainer .myTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11rem;
-    line-height: 12rem;
-    color: white;
-    opacity: 0.15;
     margin-left: -3rem;
   }
-}
-
-@media (max-width: 800px) and (max-width: 1060px) {
-  .headerContainer .myTitle {
-    font-size: 9rem;
-  }
-}
-
-@media (max-width: 800px) and (max-width: 800px) {
-  .headerContainer .myTitle {
-    font-size: 7rem;
-  }
-}
-
-@media (max-width: 800px) and (max-width: 600px) {
-  .headerContainer .myTitle {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 800px) and (max-width: 400px) {
-  .headerContainer .myTitle {
-    font-size: 5rem;
-  }
-}
-
-@media (max-width: 800px) and (max-width: 350px) {
-  .headerContainer .myTitle {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 800px) {
   .headerContainer .developer {
     margin-left: 2rem;
   }
@@ -537,9 +503,29 @@ header {
   }
 }
 
+@media (max-width: 600px) {
+  .headerContainer .myTitle {
+    margin-left: -2rem;
+  }
+  .headerContainer .developer {
+    margin-left: 1rem;
+  }
+  .headerContainer .slash {
+    top: -2rem;
+    padding: 15px 0;
+  }
+}
+
 @media (max-width: 400px) {
   header {
     background-position: bottom right 20%;
+  }
+  .headerContainer {
+    padding-top: 5vh;
+  }
+  .headerContainer .logo {
+    width: 100px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1444,8 +1430,9 @@ header {
 
 .hueAreYou .projectTitle {
   background: -webkit-linear-gradient(0deg, #ff7fca, #ffc655);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .hueAreYou .projectSkill .skillUnderline {
@@ -1462,8 +1449,9 @@ header {
 
 .fakeInterview .projectTitle {
   background: -webkit-linear-gradient(0deg, #a1dcb6 10%, #faf870);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .fakeInterview .projectSkill .skillUnderline {
@@ -1480,8 +1468,9 @@ header {
 
 .movielistGenerator .projectTitle {
   background: -webkit-linear-gradient(0deg, #b482f6, #7adbf9);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .movielistGenerator .projectSkill .skillUnderline {
@@ -1498,8 +1487,9 @@ header {
 
 .okMillionaire .projectTitle {
   background: -webkit-linear-gradient(0deg, #ffa443, #e3fc88);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .okMillionaire .projectSkill .skillUnderline {
@@ -1593,7 +1583,7 @@ header {
   margin-right: 5rem;
 }
 
-.resumeContainer .resumeTitle h4 {
+.resumeContainer .resumeTitle span {
   font-family: 'Open Sans', sans-serif;
   font-size: 4rem;
   font-weight: 700;
@@ -1603,7 +1593,7 @@ header {
 }
 
 @media (max-width: 600px) {
-  .resumeContainer .resumeTitle h4 {
+  .resumeContainer .resumeTitle span {
     font-size: 3rem;
   }
 }
@@ -1718,20 +1708,22 @@ header {
   font-weight: 400;
 }
 
-.juno .resumeTitle h4 {
+.juno .resumeTitle span {
   background: -webkit-linear-gradient(0deg, #ff7fca, #ffc655);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .juno .duration .durationLine {
   background: -webkit-linear-gradient(-90deg, #ff7fca, #ffc655);
 }
 
-.nexus .resumeTitle h4 {
+.nexus .resumeTitle span {
   background: -webkit-linear-gradient(0deg, #a1dcb6 10%, #faf870);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .nexus .duration span {
@@ -1742,20 +1734,22 @@ header {
   background: -webkit-linear-gradient(-90deg, #a1dcb6 10%, #faf870);
 }
 
-.huChen .resumeTitle h4 {
+.huChen .resumeTitle span {
   background: -webkit-linear-gradient(0deg, #b482f6, #7adbf9);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .huChen .duration .durationLine {
   background: -webkit-linear-gradient(-90deg, #b482f6, #7adbf9);
 }
 
-.provalue .resumeTitle h4 {
+.provalue .resumeTitle span {
   background: -webkit-linear-gradient(0deg, #ffa443, #e3fc88);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .provalue .duration span {
@@ -1766,10 +1760,11 @@ header {
   background: -webkit-linear-gradient(-90deg, #ffa443, #e3fc88);
 }
 
-.seneca .resumeTitle h4 {
+.seneca .resumeTitle span {
   background: -webkit-linear-gradient(0deg, #e8a7b4, #76cdf5);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .seneca .duration span {
@@ -1818,7 +1813,7 @@ header {
     margin: 0;
     padding: 30px 0 0 15px;
   }
-  .resumeContainer .resumeTitle h4 {
+  .resumeContainer .resumeTitle span {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
     font-weight: 700;
@@ -1829,7 +1824,7 @@ header {
 }
 
 @media (max-width: 1000px) and (max-width: 600px) {
-  .resumeContainer .resumeTitle h4 {
+  .resumeContainer .resumeTitle span {
     font-size: 3rem;
   }
 }
@@ -1902,7 +1897,7 @@ header {
 }
 
 @media (max-width: 600px) {
-  .resumeContainer .resumeTitle h4 {
+  .resumeContainer .resumeTitle span {
     font-size: 2rem;
   }
   .seneca .resumeDescription h5 {

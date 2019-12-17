@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $("form").trigger("reset");
+    
     $(window).scroll(function () { 
         if (whereAreWe("#contact")) { 
             getDot(5, "navContact");
@@ -88,19 +90,21 @@ $(document).ready(function () {
         if (name == '' || email == '' && phone =='') {
             Swal.fire("Please Fill Your Name and Contact")
         } else {
+            $("form").trigger("reset");
+
             const contact = {
                 contactName: name,
                 contactEmail: email,
                 contactPhone: phone,
                 contactMessage: message,
             };
+
             dbRef.push(contact);
+
             Swal.fire('Thanks! I will follow up soon!')
         }
     });
 });
-
-
 
 const firebaseConfig = {
     apiKey: "AIzaSyD9boplY7t43pbYJS3PLtbfdo_oS26jcow",

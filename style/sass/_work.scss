@@ -59,8 +59,9 @@
 .hueAreYou {
     .projectTitle {
         background: -webkit-linear-gradient(0deg, rgb(255, 127, 202) ,rgb(255, 198, 85));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     .projectSkill {
         .skillUnderline {
@@ -79,8 +80,9 @@
 .fakeInterview {
     .projectTitle {
         background: -webkit-linear-gradient(0deg, rgb(161, 220, 182) 10%,rgb(250, 248, 112));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     .projectSkill {
         .skillUnderline {
@@ -99,8 +101,9 @@
 .movielistGenerator{
     .projectTitle {
         background: -webkit-linear-gradient(0deg, rgb(180, 130, 246),rgb(122, 219, 249));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     .projectSkill {
         .skillUnderline {
@@ -119,8 +122,9 @@
 .okMillionaire{
     .projectTitle {
         background: -webkit-linear-gradient(0deg, rgb(255, 164, 67),rgb(227, 252, 136));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
     }
     .projectSkill {
         .skillUnderline {

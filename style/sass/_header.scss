@@ -82,8 +82,10 @@ header {
        background-position: bottom right; 
     }
     .headerContainer {
+        .logo {
+            width: 150px;
+        }
         .myTitle {
-            @include heading1;
             margin-left: -3rem;
         }
         .developer {
@@ -108,8 +110,30 @@ header {
     }
 }
 
+@media (max-width: 600px) {
+    .headerContainer {
+        .myTitle {
+            margin-left: -2rem;
+        }
+        .developer {
+            margin-left: 1rem;
+        }
+        .slash {
+            top: -2rem;
+            padding: 15px 0;
+        }
+    }
+}
+
 @media (max-width: 400px) {
     header{
        background-position: bottom right 20%; 
+    }
+    .headerContainer {
+        padding-top: 5vh;
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
     }
 }

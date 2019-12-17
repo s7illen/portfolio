@@ -56,10 +56,11 @@ img {
         font-size: 9rem;
     }
     @media (max-width: 800px) {
-        font-size: 7rem;
+        font-size: 7rem;    
     }
     @media (max-width: 600px) {
         font-size: 6rem;
+        line-height: 10rem;
     }
     @media (max-width: 400px) {
         font-size: 5rem;

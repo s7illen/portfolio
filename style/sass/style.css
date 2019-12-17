@@ -472,6 +472,9 @@ header {
   .headerContainer .slash {
     width: 70%;
   }
+  .headerContainer .bio {
+    width: 60%;
+  }
 }
 
 @media (max-width: 800px) {

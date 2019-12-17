@@ -1,0 +1,96 @@
+.contactBackground {
+    background-image: url('../../image/contactBackground.png');
+    background-position: center top;
+    background-size: cover;
+    max-height: 160vh;
+    padding-top: 150px;
+}
+
+form {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 5fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    max-width: 600px;
+    .contactName {
+        grid-area: 1 / 1 / 2 / 3;
+        @include contactInput;
+    }
+    .contactPhone {
+        grid-area: 2 / 1 / 3 / 2;
+        @include contactInput;
+    }
+    .contactEmail {
+        grid-area: 2 / 2 / 3 / 3;
+        @include contactInput;
+    }
+    .message {
+        grid-area: 3 / 1 / 4 / 3;
+        padding: 20px;
+        @include contactInput;
+        border: 1.5px solid $littlegrey;
+        outline: none;
+        resize: none;
+        margin-top: 30px;
+    }
+    .send {
+        @include contactInput;
+        margin: 0 auto;
+        grid-area: 4 / 1 / 5 / 3;
+        padding: 5px 80px;
+        border: 1.5px solid $littlegrey;
+    }
+}
+
+.footer {
+    .or {
+        @include footerText;
+        color: rgb(191, 255, 204);
+        font-size: 2rem;
+        margin-bottom: 48px;
+        font-weight: 700;
+        font-family: 'Comfortaa', cursive;
+    }
+    .myEmail {
+        @include footerText;
+        font-size: 2.5rem;
+    }
+    .myPhone {
+        @include footerText;
+        font-size: 4rem;
+        font-weight: 700;
+        color: rgb(191, 255, 204);
+        margin: 10px 0 30px 0;
+    }
+    .socialAccount {
+        margin: 0 auto;
+        max-width: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            i {
+                color: white;
+                font-size: 2.8rem;
+                transition: all .2s ease-in-out;
+            } 
+            i:hover {
+                transform: scale(1.2);
+            }           
+        }
+
+    }
+    .copyright {
+        padding: 60px 0 15px 0;
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Comfortaa', cursive;
+        color: $littlegrey;
+        span {
+            color: rgb(154, 154, 154);
+        }
+    }
+}

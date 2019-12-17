@@ -141,6 +141,27 @@ img {
     color: $violet;
 }
 
+@mixin footerText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3rem;
+}
+
+@mixin contactInput {
+    min-width: 0;
+    background: none;
+    border: none;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-weight: 300;
+    border-bottom: 1.5px solid $littlegrey;
+    letter-spacing: 0.4rem;
+}
 // //Background Gradient
 // @mixin backgroundGradient {
 //     width: 100%;

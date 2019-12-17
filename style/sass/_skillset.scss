@@ -1,7 +1,9 @@
 .skillset {
     height: 1080px;
     background-image: url("../../image/skillsetBackground.png");
+    // background-size: contain;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom left;
 }
 

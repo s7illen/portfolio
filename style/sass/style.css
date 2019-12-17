@@ -257,12 +257,16 @@ nav .navDot li i {
   font-size: 0.6rem;
 }
 
-nav .navDot .selected {
-  padding: 0.4rem;
-  color: white;
+nav .navDot li:hover {
+  cursor: pointer;
 }
 
-nav .navDot .selected i {
+nav .navDot .navSelected {
+  padding: 0.65rem;
+  color: #e1e1e1;
+}
+
+nav .navDot .navSelected i {
   font-size: 2rem;
 }
 
@@ -326,6 +330,7 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
+  font-size: 2.2rem;
   position: relative;
   top: -6rem;
 }
@@ -349,6 +354,40 @@ header {
   position: absolute;
   bottom: 10px;
   right: calc(50% - 10px);
+  -webkit-animation: moveUpDown 2.5s infinite alternate;
+          animation: moveUpDown 2.5s infinite alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes moveUpDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .title {
@@ -411,6 +450,7 @@ header {
   height: 1080px;
   background-image: url("../../image/skillsetBackground.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: bottom left;
 }
 
@@ -1166,6 +1206,13 @@ header {
   box-shadow: 5px 5px 10px -2px rgba(255, 198, 85, 0.6);
 }
 
+.hueAreYou .projectButtons button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#ff7fca), to(#ffc655));
+  background: linear-gradient(-90deg, #ff7fca, #ffc655);
+  -webkit-box-shadow: 5px 5px 20px -2px rgba(255, 198, 85, 0.6);
+  box-shadow: 5px 5px 20px -2px rgba(255, 198, 85, 0.6);
+}
+
 .fakeInterview .projectTitle {
   background: -webkit-linear-gradient(0deg, #a1dcb6 10%, #faf870);
   background-clip: text;
@@ -1427,5 +1474,201 @@ header {
   color: #423a8b;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+}
+
+.contactBackground {
+  background-image: url("../../image/contactBackground.png");
+  background-position: center top;
+  background-size: cover;
+  max-height: 160vh;
+  padding-top: 150px;
+}
+
+form {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2] 5fr 1fr;
+      grid-template-rows: repeat(2, 1fr) 5fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  max-width: 600px;
+}
+
+form .contactName {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+  min-width: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+  border-bottom: 1.5px solid #e1e1e1;
+  letter-spacing: 0.4rem;
+}
+
+form .contactPhone {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / 3 / 2;
+  min-width: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+  border-bottom: 1.5px solid #e1e1e1;
+  letter-spacing: 0.4rem;
+}
+
+form .contactEmail {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 3 / 3;
+  min-width: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+  border-bottom: 1.5px solid #e1e1e1;
+  letter-spacing: 0.4rem;
+}
+
+form .message {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 1 / 4 / 3;
+  padding: 20px;
+  min-width: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+  border-bottom: 1.5px solid #e1e1e1;
+  letter-spacing: 0.4rem;
+  border: 1.5px solid #e1e1e1;
+  outline: none;
+  resize: none;
+  margin-top: 30px;
+}
+
+form .send {
+  min-width: 0;
+  background: none;
+  border: none;
+  text-align: center;
+  color: white;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+  border-bottom: 1.5px solid #e1e1e1;
+  letter-spacing: 0.4rem;
+  margin: 0 auto;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 1 / 5 / 3;
+  padding: 5px 80px;
+  border: 1.5px solid #e1e1e1;
+}
+
+.footer .or {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.3rem;
+  color: #bfffcc;
+  font-size: 2rem;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
+}
+
+.footer .myEmail {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+
+.footer .myPhone {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #bfffcc;
+  margin: 10px 0 30px 0;
+}
+
+.footer .socialAccount {
+  margin: 0 auto;
+  max-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .socialAccount a i {
+  color: white;
+  font-size: 2.8rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.footer .socialAccount a i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer .copyright {
+  padding: 60px 0 15px 0;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
+  color: #e1e1e1;
+}
+
+.footer .copyright span {
+  color: #9a9a9a;
 }
 /*# sourceMappingURL=style.css.map */

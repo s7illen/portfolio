@@ -28,13 +28,23 @@ nav {
                 font-size: 0.6rem;
             }
         } 
-        .selected {
-            padding: 0.4rem;
-            color: white;
+        li:hover {
+            cursor: pointer;
+        }
+        .navSelected {
+            padding: 0.65rem;
+            color: $littlegrey;
             i {
                 font-size: 2rem;
             }
         }
+        // .navHovered {
+        //     padding: 0.65rem;
+        //     color: white;
+        //     i {
+        //         font-size: 2rem;
+        //     }
+        // }
     }
 
 }

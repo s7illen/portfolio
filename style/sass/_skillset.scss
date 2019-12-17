@@ -203,3 +203,44 @@
         }
     }
 }
+
+
+@media (max-width: 800px) {
+
+    .skillset {
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+
+    .mark {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+        .outerCircle {
+            display: none;
+        }
+        .innerCircle {
+            display: none;
+        }
+        .target {
+            display: none;
+        }
+        .premiere {
+            display: none;
+        }
+        .js, .react, .sass, .rwd, .jQuery, .css, .html, .github, .indesign, .firebase, .ps, .ai {
+            img {
+                animation: 0;
+                width: 100px;
+                margin: 15px;
+            }
+        }
+    }
+ 
+}

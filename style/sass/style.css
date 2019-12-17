@@ -249,24 +249,27 @@ nav .navDot {
           justify-content: center;
 }
 
-nav .navDot li {
-  padding: 1.1rem;
-}
-
-nav .navDot li i {
-  font-size: 0.6rem;
-}
-
-nav .navDot li:hover {
-  cursor: pointer;
-}
-
-nav .navDot .navSelected {
-  padding: 0.65rem;
+nav .navDot a {
   color: #e1e1e1;
 }
 
-nav .navDot .navSelected i {
+nav .navDot a li {
+  padding: 1.1rem;
+}
+
+nav .navDot a li i {
+  font-size: 0.6rem;
+}
+
+nav .navDot a li:hover {
+  cursor: pointer;
+}
+
+nav .navDot a .navSelected {
+  padding: 0.65rem;
+}
+
+nav .navDot a .navSelected i {
   font-size: 2rem;
 }
 
@@ -296,6 +299,36 @@ header {
   margin-left: -5rem;
 }
 
+@media (max-width: 1060px) {
+  .headerContainer .myTitle {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerContainer .myTitle {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer .myTitle {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerContainer .myTitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .headerContainer .myTitle {
+    font-size: 4rem;
+  }
+}
+
 .headerContainer .developer {
   margin-left: 2rem;
 }
@@ -314,6 +347,30 @@ header {
   position: relative;
 }
 
+@media (max-width: 1060px) {
+  .headerContainer .nameContainer .name {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerContainer .nameContainer .name {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer .nameContainer .name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerContainer .nameContainer .name {
+    font-size: 3rem;
+  }
+}
+
 .headerContainer .nameContainer .nameUnderline {
   z-index: 0;
   position: relative;
@@ -330,7 +387,7 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  font-size: 2.2rem;
+  font-size: 2rem;
   position: relative;
   top: -6rem;
 }
@@ -349,6 +406,24 @@ header {
   color: white;
 }
 
+@media (max-width: 1000px) {
+  .headerContainer .bio p {
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerContainer .bio p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerContainer .bio p {
+    line-height: 2rem;
+  }
+}
+
 .mouse {
   width: 20px;
   position: absolute;
@@ -358,6 +433,7 @@ header {
           animation: moveUpDown 2.5s infinite alternate;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 @-webkit-keyframes moveUpDown {
@@ -390,10 +466,87 @@ header {
   }
 }
 
+@media (max-width: 1300px) {
+  .headerContainer .slash {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    background-position: bottom right;
+  }
+  .headerContainer .myTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11rem;
+    line-height: 12rem;
+    color: white;
+    opacity: 0.15;
+    margin-left: -3rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 1060px) {
+  .headerContainer .myTitle {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 800px) {
+  .headerContainer .myTitle {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 600px) {
+  .headerContainer .myTitle {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 400px) {
+  .headerContainer .myTitle {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) and (max-width: 350px) {
+  .headerContainer .myTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerContainer .developer {
+    margin-left: 2rem;
+  }
+  .headerContainer .nameContainer .nameUnderline {
+    height: 8px;
+    bottom: -1.2rem;
+  }
+  .headerContainer .slash {
+    font-size: 1.6rem;
+    width: 85%;
+  }
+  .headerContainer .bio {
+    width: 100%;
+  }
+  .mouse {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    background-position: bottom right 20%;
+  }
+}
+
 .title {
   margin: 20px auto;
   width: 0;
   position: relative;
+  cursor: pointer;
 }
 
 .title .titleCenter {
@@ -444,6 +597,19 @@ header {
   font-weight: 400;
   min-width: 200px;
   text-align: left;
+}
+
+@media (max-width: 600px) {
+  .title .titleCenter .maintitle {
+    font-size: 4rem;
+    width: auto;
+    min-width: 100px;
+    white-space: nowrap;
+  }
+  .title .subtitle {
+    font-size: 1.6rem;
+    min-width: 50px;
+  }
 }
 
 .skillset {
@@ -1098,6 +1264,48 @@ header {
   }
 }
 
+@media (max-width: 800px) {
+  .skillset {
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .mark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .mark .outerCircle {
+    display: none;
+  }
+  .mark .innerCircle {
+    display: none;
+  }
+  .mark .target {
+    display: none;
+  }
+  .mark .premiere {
+    display: none;
+  }
+  .mark .js img, .mark .react img, .mark .sass img, .mark .rwd img, .mark .jQuery img, .mark .css img, .mark .html img, .mark .github img, .mark .indesign img, .mark .firebase img, .mark .ps img, .mark .ai img {
+    -webkit-animation: 0;
+            animation: 0;
+    width: 100px;
+    margin: 15px;
+  }
+}
+
 .project {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1149,11 +1357,23 @@ header {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+  .pjText .projectTitle {
+    font-size: 3rem;
+  }
+}
+
 .pjText .projectSkill h5 {
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   font-weight: 700;
   color: #4a154b;
+}
+
+@media (max-width: 600px) {
+  .pjText .projectSkill h5 {
+    font-size: 1.6rem;
+  }
 }
 
 .pjText .projectSkill .skillUnderline {
@@ -1175,6 +1395,24 @@ header {
   line-height: 3rem;
 }
 
+@media (max-width: 1000px) {
+  .pjText .projectDescription {
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pjText .projectDescription {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .pjText .projectDescription {
+    line-height: 2rem;
+  }
+}
+
 .pjText .projectButtons button {
   font-family: 'Open Sans', sans-serif;
   border: none;
@@ -1186,6 +1424,15 @@ header {
   font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pjText .projectButtons button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 10px -2px #ffb7c4;
+          box-shadow: 5px 5px 10px -2px #ffb7c4;
 }
 
 .hueAreYou .projectTitle {
@@ -1204,13 +1451,6 @@ header {
   background: linear-gradient(90deg, #ff7fca, #ffc655);
   -webkit-box-shadow: 5px 5px 10px -2px rgba(255, 198, 85, 0.6);
   box-shadow: 5px 5px 10px -2px rgba(255, 198, 85, 0.6);
-}
-
-.hueAreYou .projectButtons button:hover {
-  background: -webkit-gradient(linear, right top, left top, from(#ff7fca), to(#ffc655));
-  background: linear-gradient(-90deg, #ff7fca, #ffc655);
-  -webkit-box-shadow: 5px 5px 20px -2px rgba(255, 198, 85, 0.6);
-  box-shadow: 5px 5px 20px -2px rgba(255, 198, 85, 0.6);
 }
 
 .fakeInterview .projectTitle {
@@ -1267,6 +1507,50 @@ header {
   box-shadow: 5px 5px 10px -2px #e3fc88;
 }
 
+@media (max-width: 800px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px 0;
+  }
+  .project .pjDisplay {
+    width: 100%;
+  }
+  .project .pjText {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .pjText .projectSkill .skillUnderline {
+    height: 4px;
+  }
+  .pjText .projectButtons button {
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .pjText .projectSkill .skillUnderline {
+    display: none;
+  }
+}
+
 .resume {
   margin: 50px 0;
 }
@@ -1311,11 +1595,23 @@ header {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 600px) {
+  .resumeContainer .resumeTitle h4 {
+    font-size: 3rem;
+  }
+}
+
 .resumeContainer .resumeTitle h5 {
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   font-weight: 700;
   color: #4a154b;
+}
+
+@media (max-width: 600px) {
+  .resumeContainer .resumeTitle h5 {
+    font-size: 1.6rem;
+  }
 }
 
 .resumeContainer .duration {
@@ -1376,6 +1672,24 @@ header {
   color: #4a154b;
   line-height: 3rem;
   color: #423a8b;
+}
+
+@media (max-width: 1000px) {
+  .resumeContainer .resumeDescription p {
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .resumeContainer .resumeDescription p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .resumeContainer .resumeDescription p {
+    line-height: 2rem;
+  }
 }
 
 .resumeContainer .resumeDate {
@@ -1474,6 +1788,120 @@ header {
   color: #423a8b;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .resumeContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 1fr;
+        grid-template-columns: 50px 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
+  .resumeContainer .resumeTitle {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 0;
+    padding: 30px 0 0 15px;
+  }
+  .resumeContainer .resumeTitle h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 600px) {
+  .resumeContainer .resumeTitle h4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .resumeContainer .resumeTitle h5 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a154b;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 600px) {
+  .resumeContainer .resumeTitle h5 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .resumeContainer .duration {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 3 / 2;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .resumeContainer .duration .durationLine {
+    width: 5px;
+    height: 100%;
+  }
+  .resumeContainer .resumeDescription {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .resumeContainer .resumeDescription p {
+    padding: 10px 0 30px 15px;
+  }
+  .resumeContainer .resumeDate {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 3 / 1 / 4 / 3;
+    padding: 15px 0;
+    font-size: 2rem;
+    text-align: left;
+  }
+  .resumeContainer .resumeDate .resumeMonth {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .resumeContainer .resumeTitle h4 {
+    font-size: 2rem;
+  }
+  .seneca .resumeDescription h5 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 }
 
 .contactBackground {
@@ -1598,6 +2026,13 @@ form .send {
   grid-area: 4 / 1 / 5 / 3;
   padding: 5px 80px;
   border: 1.5px solid #e1e1e1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+form .send:hover {
+  background: lightgray;
+  color: #4a154b;
 }
 
 .footer .or {
@@ -1670,5 +2105,79 @@ form .send {
 
 .footer .copyright span {
   color: #9a9a9a;
+}
+
+@media (max-width: 600px) {
+  form {
+    max-width: 350px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3] 5fr 1fr;
+        grid-template-rows: repeat(3, 1fr) 5fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+  form .contactName {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  form .contactPhone {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  form .contactEmail {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  form .message {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  form .send {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 5 / 1 / 6 / 2;
+    padding: 5px 0;
+    width: 100%;
+  }
+  .footer .myEmail {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 1.8rem;
+  }
+  .footer .myPhone {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #bfffcc;
+    margin: 10px 0 30px 0;
+  }
+  .footer .socialAccount a i {
+    font-size: 2rem;
+  }
+  .footer .copyright {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

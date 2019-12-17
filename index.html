@@ -8,7 +8,7 @@
     <title>Steven Chen</title>
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,700|Montserrat:800|Open+Sans:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/sass/style.css">
+    <link rel="stylesheet" type="text/css" href="style/sass/style.css">
 </head>
 
 <body>
@@ -18,11 +18,11 @@
             <ul class="navDot">
                 <!-- <i class="far fa-dot-circle"></i> -->
                 <!-- <i class="fas fa-dot-circle"></i> -->
-                <li class="navHome navSelected"><i class="fas fa-dot-circle"></i></li>
-                <li class="navMark"><i class="fas fa-circle"></i></li>
-                <li class="navProject"><i class="fas fa-circle"></i></li>
-                <li class="navResume"><i class="fas fa-circle"></i></li>
-                <li class="navContact"><i class="fas fa-circle"></i></li>
+                <a href="#home"><li class="navHome navSelected"><i class="fas fa-dot-circle"></i></li></a>
+                <a href="#mark"><li class="navMark"><i class="fas fa-circle"></i></li></a>
+                <a href="#project"><li class="navProject"><i class="fas fa-circle"></i></li></a>
+                <a href="#resume"><li class="navResume"><i class="fas fa-circle"></i></li></a>
+                <a href="#contact"><li class="navContact"><i class="fas fa-circle"></i></li></a>
             </ul>
 
         </nav>
@@ -94,8 +94,8 @@
                 </div>
                 <p class="projectDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, expedita. Blanditiis minima officia quia veritatis sapiente ipsam cum expedita cumque necessitatibus, inventore, exercitationem neque velit quaerat, aliq class odio accusamus. Architecto?</p>
                 <div class="projectButtons">
-                    <button>Live</button>
-                    <button>Github</button>
+                    <a href="https://huearewe.github.io/hueAreYou/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/hueAreWe/hueAreYou" target="_blank"><button>Github</button></a>
                 </div>
             </div>
         </div>
@@ -114,8 +114,8 @@
                     minima officia quia veritatis sapiente ipsam cum expedita cumque necessitatibus, inventore, exercitationem
                     neque velit quaerat, aliq class odio accusamus. Architecto?</p>
                 <div class="projectButtons">
-                    <button>Live</button>
-                    <button>Github</button>
+                    <a href="https://s7illen.github.io/Steven-Chen-Project-5/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/s7illen/Steven-Chen-Project-5" target="_blank"><button>Github</button></a>
                 </div>
             </div>
         </div>
@@ -134,8 +134,8 @@
                     minima officia quia veritatis sapiente ipsam cum expedita cumque necessitatibus, inventore, exercitationem
                     neque velit quaerat, aliq class odio accusamus. Architecto?</p>
                 <div class="projectButtons">
-                    <button>Live</button>
-                    <button>Github</button>
+                    <a href="https://s7illen.github.io/moviePlaylistGenerator/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/s7illen/moviePlaylistGenerator" target="_blank"><button>Github</button></a>
                 </div>
             </div>
         </div>
@@ -154,8 +154,8 @@
                     minima officia quia veritatis sapiente ipsam cum expedita cumque necessitatibus, inventore, exercitationem
                     neque velit quaerat, aliq class odio accusamus. Architecto?</p>
                 <div class="projectButtons">
-                    <button>Live</button>
-                    <button>Github</button>
+                    <a href="https://s7illen.github.io/stevenChenprojectThree/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/s7illen/stevenChenprojectThree" target="_blank"><button>Github</button></a>
                 </div>
             </div>
         </div>
@@ -289,7 +289,7 @@
                 <input type="text" class="contactPhone" name="phone" placeholder="PHONE">
 
                 <label for="contactEmail"></label>
-                <input type="text" class="contactEmail" name="email" placeholder="EMAIL">
+                <input type="email" class="contactEmail" name="email" placeholder="EMAIL">
 
                 <label for="message"></label>
                 <textarea class="message" name="message" placeholder="MESSAGE"></textarea>
@@ -317,6 +317,10 @@
         </div>
     </section>
 
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.5.3/dist/sweetalert2.all.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js'
         integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
     <script src="./script.js"></script>

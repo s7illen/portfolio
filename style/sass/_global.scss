@@ -83,14 +83,21 @@ img {
     line-height: 12rem;
     color: white;
     opacity: 0.15;
-    // @media (max-width: 800px) {
-    //     font-size: 5rem;
-    //     line-height: 6rem;
-    // }
-    // @media (max-width: 500px) {
-    //     font-size: 4rem;
-    //     line-height: 5rem;
-    // }
+    @media (max-width: 1060px) {
+        font-size: 9rem;
+    }
+    @media (max-width: 800px) {
+        font-size: 7rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 6rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 4rem;
+    }
 }
 
 @mixin heading2 {
@@ -99,6 +106,18 @@ img {
     line-height: 0rem;
     font-weight: 700;
     color: white;
+    @media (max-width: 1060px) {
+        font-size: 6rem;
+    }
+    @media (max-width: 800px) {
+        font-size: 5rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 3rem;
+    }
 }
 
 @mixin titleText {
@@ -124,6 +143,9 @@ img {
     font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase;
+    @media (max-width: 600px) {
+        font-size: 3rem;
+    }
 }
 
 @mixin heading5 {
@@ -131,6 +153,9 @@ img {
     font-size: 2rem;
     font-weight: 700;
     color: $violet;
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
 }
 
 @mixin text {
@@ -139,6 +164,15 @@ img {
     line-height: 3.5rem;
     font-weight: 300;
     color: $violet;
+    @media (max-width: 1000px) {
+        line-height: 2.5rem;
+    }
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 400px) {
+        line-height: 2rem;
+    }
 }
 
 @mixin footerText {

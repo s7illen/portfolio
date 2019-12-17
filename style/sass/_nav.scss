@@ -22,22 +22,25 @@ nav {
         padding: 3px 3px;
         border-radius: 50px;
         @include flexerV;
-        li {
-            padding: 1.1rem;
-            i {
-                font-size: 0.6rem;
-            }
-        } 
-        li:hover {
-            cursor: pointer;
-        }
-        .navSelected {
-            padding: 0.65rem;
+        a {
             color: $littlegrey;
-            i {
-                font-size: 2rem;
+            li {
+                padding: 1.1rem;
+                i {
+                    font-size: 0.6rem;
+                }
+            } 
+            li:hover {
+                cursor: pointer;
             }
+            .navSelected {
+                padding: 0.65rem;
+                i {
+                    font-size: 2rem;
+                }
+            }            
         }
+
         // .navHovered {
         //     padding: 0.65rem;
         //     color: white;

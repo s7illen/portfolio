@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('.headerContainer').addClass('fadeIn');
 
     $("form").trigger("reset");
     
@@ -6,15 +7,19 @@ $(document).ready(function () {
         if (whereAreWe("#contact")) { 
             getDot(5, "navContact");
             $('.navText span').replaceWith('<span>Contact</span>');
+            $('form').addClass('fadeIn');
         } else if (whereAreWe("#resume")) {
             getDot(4, "navResume");
             $('.navText span').replaceWith('<span>Experience</span>');
+            $('.resumeContainer').addClass('resumeAnimation');
         } else if (whereAreWe("#project")) {
             getDot(3, "navProject");
             $('.navText span').replaceWith('<span>Work</span>');
+            $('.work').addClass('fadeIn');
         } else if (whereAreWe("#mark")) {
             getDot(2, "navMark");
             $('.navText span').replaceWith('<span>Skillset</span>');
+            $('.mark').addClass('fadeIn');
         } else {
             getDot(1 , "navHome");
             $('.navText span').replaceWith('<span>Home</span>');

@@ -207,6 +207,33 @@ img {
   margin: 0 auto;
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fade-in 1s;
+          animation: fade-in 1s;
+}
+
 nav {
   z-index: 100;
   position: fixed;
@@ -1906,6 +1933,189 @@ header {
   .seneca .resumeDescription h5 {
     font-size: 1.6rem;
     line-height: 2rem;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.resumeAnimation .resumeTitle {
+  -webkit-animation: slideLeft 5s 1;
+          animation: slideLeft 5s 1;
+}
+
+.resumeAnimation .duration {
+  -webkit-animation: slideTop 5s 1;
+          animation: slideTop 5s 1;
+}
+
+.resumeAnimation .resumeDescription {
+  -webkit-animation: slideRight 5s 1;
+          animation: slideRight 5s 1;
+}
+
+.resumeAnimation .resumeDate {
+  -webkit-animation: slideBottom 5s 1;
+          animation: slideBottom 5s 1;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  14.28% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  85.71% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  14.28% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  85.71% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  14.28% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  85.71% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  14.28% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  85.71% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes slideTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  14.28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  85.71% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  14.28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  85.71% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  14.28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  85.71% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  14.28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  85.71% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 

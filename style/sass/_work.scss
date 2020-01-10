@@ -49,6 +49,7 @@
             font-weight: 700; 
             transition: all 0.5s ease;
         }
+        button:focus,
         button:hover {
             transform: scale(1.05);
             box-shadow: 5px 5px 10px -2px rgb(255, 183, 196);

@@ -302,6 +302,7 @@ nav .navDot a .navSelected i {
 
 header {
   height: 100vh;
+  min-height: 680px;
   background-image: url("../../image/portraitdoubleex.png");
   background-position: bottom;
   background-size: cover;
@@ -465,14 +466,20 @@ header {
   cursor: pointer;
 }
 
+.mouse:hover,
+.mouse:focus {
+  -webkit-animation: moveUpDown 0.5s infinite alternate;
+          animation: moveUpDown 0.5s infinite alternate;
+}
+
 @-webkit-keyframes moveUpDown {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -486,8 +493,8 @@ header {
             transform: translateY(0);
   }
   50% {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
   }
   100% {
     -webkit-transform: translateY(0px);
@@ -631,10 +638,7 @@ header {
 
 .skillset {
   height: 1080px;
-  background-image: url("../../image/skillsetBackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom left;
+  background: none;
 }
 
 .mark {
@@ -1281,12 +1285,19 @@ header {
   }
 }
 
+@media (max-width: 1600px) {
+  .skillset {
+    background-image: url("../../image/skillsetBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+}
+
 @media (max-width: 800px) {
   .skillset {
     height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background: none;
   }
   .mark {
     display: -webkit-box;
@@ -1451,6 +1462,7 @@ header {
   transition: all 0.5s ease;
 }
 
+.pjText .projectButtons button:focus,
 .pjText .projectButtons button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -2080,7 +2092,7 @@ header {
   background-image: url("../../image/contactBackground.png");
   background-position: center top;
   background-size: cover;
-  max-height: 160vh;
+  max-height: 1600px;
   padding-top: 150px;
 }
 
@@ -2154,6 +2166,12 @@ form .contactEmail {
   letter-spacing: 0.4rem;
 }
 
+form .contactName:focus,
+form .contactPhone:focus,
+form .contactEmail:focus {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
 form .message {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -2176,6 +2194,10 @@ form .message {
   outline: none;
   resize: none;
   margin-top: 30px;
+}
+
+form .message:focus {
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
 form .send {
@@ -2202,6 +2224,7 @@ form .send {
   transition: all 0.5s ease;
 }
 
+form .send:focus,
 form .send:hover {
   background: lightgray;
   color: #4a154b;
@@ -2261,7 +2284,8 @@ form .send:hover {
   transition: all .2s ease-in-out;
 }
 
-.footer .socialAccount a i:hover {
+.footer .socialAccount a i:hover,
+.footer .socialAccount a i:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }

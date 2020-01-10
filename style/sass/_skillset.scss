@@ -1,9 +1,6 @@
 .skillset {
     height: 1080px;
-    background-image: url("../../image/skillsetBackground.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    background: none;
 }
 
 .mark {
@@ -203,14 +200,24 @@
     }
 }
 
+@media (max-width: 1600px) {
+    .skillset {
+        background-image: url("../../image/skillsetBackground.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+    }
+}
+
 
 @media (max-width: 800px) {
 
     .skillset {
     height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: bottom;
+    background: none;
     }
 
     .mark {

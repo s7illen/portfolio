@@ -1,5 +1,6 @@
 header {
     height: 100vh;
+    min-height: 680px;
     background-image: url('../../image/portraitdoubleex.png');
     background-position: bottom;
     background-size: cover;
@@ -63,9 +64,14 @@ header {
     cursor: pointer;
 }
 
+.mouse:hover,
+.mouse:focus {
+    animation: moveUpDown 0.5s infinite alternate;
+}
+
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
     100% { transform: translateY(0px); }
 }
 

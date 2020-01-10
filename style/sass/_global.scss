@@ -130,18 +130,22 @@ img {
 
 @mixin text {
     font-family: 'Comfortaa', cursive;
-    font-size: 1.6rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 5rem;
     font-weight: 300;
     color: $violet;
+    @media (max-width: 1600px) {
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
     @media (max-width: 1000px) {
-        line-height: 2.5rem;
+        line-height: 3.5rem;
     }
     @media (max-width: 600px) {
         font-size: 1.4rem;
     }
     @media (max-width: 400px) {
-        line-height: 2rem;
+        line-height: 3rem;
     }
 }
 

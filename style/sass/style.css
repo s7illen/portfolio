@@ -429,16 +429,23 @@ header {
 
 .headerContainer .bio p {
   font-family: 'Comfortaa', cursive;
-  font-size: 1.6rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 5rem;
   font-weight: 300;
   color: #4a154b;
   color: white;
 }
 
+@media (max-width: 1600px) {
+  .headerContainer .bio p {
+    font-size: 1.6rem;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .headerContainer .bio p {
-    line-height: 2.5rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -450,7 +457,7 @@ header {
 
 @media (max-width: 400px) {
   .headerContainer .bio p {
-    line-height: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -1421,17 +1428,24 @@ header {
 
 .pjText .projectDescription {
   font-family: 'Comfortaa', cursive;
-  font-size: 1.6rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 5rem;
   font-weight: 300;
   color: #4a154b;
   margin: 1rem 0;
   line-height: 3rem;
 }
 
+@media (max-width: 1600px) {
+  .pjText .projectDescription {
+    font-size: 1.6rem;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .pjText .projectDescription {
-    line-height: 2.5rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -1443,7 +1457,7 @@ header {
 
 @media (max-width: 400px) {
   .pjText .projectDescription {
-    line-height: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -1705,17 +1719,24 @@ header {
 .resumeContainer .resumeDescription p {
   padding: 30px 15px;
   font-family: 'Comfortaa', cursive;
-  font-size: 1.6rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 5rem;
   font-weight: 300;
   color: #4a154b;
   line-height: 3rem;
   color: #423a8b;
 }
 
+@media (max-width: 1600px) {
+  .resumeContainer .resumeDescription p {
+    font-size: 1.6rem;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .resumeContainer .resumeDescription p {
-    line-height: 2.5rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -1727,7 +1748,7 @@ header {
 
 @media (max-width: 400px) {
   .resumeContainer .resumeDescription p {
-    line-height: 2rem;
+    line-height: 3rem;
   }
 }
 
